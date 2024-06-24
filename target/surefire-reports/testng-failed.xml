@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="api.Utilities.ExtentReportGenerator"/>
+  </listeners>
+  <test name="Test(failed)">
+    <classes>
+      <class name="api.TestCases.SampleTests">
+        <methods>
+          <include name="updateData"/>
+          <include name="setupData"/>
+        </methods>
+      </class> <!-- api.TestCases.SampleTests -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

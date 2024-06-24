@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Surefire suite]" verbose="0">
+  <test name="Surefire test(failed)">
+    <classes>
+      <class name="api.TestCases.TestUserAPI">
+        <methods>
+          <include name="testDeleteUser"/>
+          <include name="testUpdateUser"/>
+          <include name="setupData"/>
+        </methods>
+      </class> <!-- api.TestCases.TestUserAPI -->
+      <class name="api.TestCases.TestBulkGetData">
+        <methods>
+          <include name="testBulkGetData" invocation-numbers="0 1 2 3 4 5 6 7 8 9"/>
+        </methods>
+      </class> <!-- api.TestCases.TestBulkGetData -->
+      <class name="api.TestCases.TestBulkDeleteData">
+        <methods>
+          <include name="testDeleteUser" invocation-numbers="1 2 9"/>
+        </methods>
+      </class> <!-- api.TestCases.TestBulkDeleteData -->
+      <class name="api.TestCases.SampleTests">
+        <methods>
+          <include name="setupData"/>
+        </methods>
+      </class> <!-- api.TestCases.SampleTests -->
+    </classes>
+  </test> <!-- Surefire test(failed) -->
+</suite> <!-- Failed suite [Surefire suite] -->
